@@ -1,0 +1,28 @@
+
+
+.App {
+    text-align: center;
+}
+  
+.logo {
+    height: 60px;
+    pointer-events: none;
+  }
+
+.navbar {
+  background-color: #227b94;
+}
+
+.nav-item {
+margin-left: 40px;
+margin-right: 40px;
+font-size: 22px;
+font-style: oblique;
+font-weight: bold;
+  }
+  
+  
+.link {
+    color: #ffffff;
+}
+  
