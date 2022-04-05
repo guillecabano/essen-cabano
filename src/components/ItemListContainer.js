@@ -1,9 +1,19 @@
-import { Button } from '@material-ui/core';
+import ItemCount from './ItemCount';
+import './styles/ItemListContainer.css'
 
-const ItemListContainer =({greeting}) => {
+
+const ItemListContainer = ({greeting}) => {
+
+    const onAdd = (qty) => {
+        alert("You have selected " + qty + " items.");
+    }
+
     return (
-        <Button variant="contained" color="primary">{greeting}</Button>
-    )
+        <>
+            <div class='wrapper'>{greeting}</div>
+            <ItemCount stock={4} initial={1} onAdd={onAdd} />
+        </>
+    );
 }
 
 export default ItemListContainer;

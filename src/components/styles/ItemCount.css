@@ -1,0 +1,12 @@
+
+
+.ProductAmountContainer {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.ProductAmount {
+    font-size: 24px;
+    margin: 5px;
+}
