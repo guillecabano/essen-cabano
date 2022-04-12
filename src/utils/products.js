@@ -131,8 +131,8 @@ const products = [
   },  {
     id: 9,
     name: "Savarin 24cm Terra",
-    stock: 100,
-    cost: 140,
+    stock: 10,
+    cost: 3000,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
     image: [
