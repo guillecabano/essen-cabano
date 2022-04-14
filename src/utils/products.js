@@ -3,7 +3,7 @@ const products = [
     id: 1,
     name: "Cacerola 24cm Marsalla",
     stock: 100,
-    cost: 140,
+    cost: 8000,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
     image: [
@@ -20,7 +20,7 @@ const products = [
     id: 2,
     name: "Cacerola con Mango 18cm",
     stock: 100,
-    cost: 140,
+    cost: 7000,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
     image: [
@@ -29,14 +29,14 @@ const products = [
     sales: 0,
     category: {
       name: "Cacerolas",
-      id: 2,
+      id: 1,
     },
     reviews: [],
   },  {
     id: 3,
     name: "Cacerola Cuadrada 29cm Aqua",
     stock: 100,
-    cost: 140,
+    cost: 9000,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
     image: [
@@ -45,14 +45,14 @@ const products = [
     sales: 0,
     category: {
       name: "Cacerolas",
-      id: 3,
+      id: 1,
     },
     reviews: [],
   },  {
     id: 4,
     name: "Cacerola Cuadrada 20cm Aqua",
     stock: 100,
-    cost: 140,
+    cost: 7500,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
     image: [
@@ -61,14 +61,14 @@ const products = [
     sales: 0,
     category: {
       name: "Cacerolas",
-      id: 4,
+      id: 1,
     },
     reviews: [],
   },  {
     id: 5,
     name: "Sarten 28cm Aqua",
     stock: 100,
-    cost: 140,
+    cost: 8000,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
     image: [
@@ -77,14 +77,14 @@ const products = [
     sales: 0,
     category: {
       name: "Sartenes",
-      id: 1,
+      id: 2,
     },
     reviews: [],
   },  {
     id: 6,
     name: "Sarten 24cm Marsalla",
     stock: 100,
-    cost: 140,
+    cost: 7000,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
     image: [
@@ -100,7 +100,7 @@ const products = [
     id: 7,
     name: "Sarten 20cm Aqua",
     stock: 100,
-    cost: 140,
+    cost: 6000,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
     image: [
@@ -109,14 +109,14 @@ const products = [
     sales: 0,
     category: {
       name: "Sartenes",
-      id: 3,
+      id: 2,
     },
     reviews: [],
   },  {
     id: 8,
     name: "Bifera",
     stock: 100,
-    cost: 140,
+    cost: 7500,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
     image: [
@@ -125,14 +125,14 @@ const products = [
     sales: 0,
     category: {
       name: "Sartenes",
-      id: 4,
+      id: 2,
     },
     reviews: [],
   },  {
     id: 9,
     name: "Savarin 24cm Terra",
     stock: 10,
-    cost: 3000,
+    cost: 5000,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
     image: [
@@ -141,14 +141,14 @@ const products = [
     sales: 0,
     category: {
       name: "Accesorios",
-      id: 1,
+      id: 3,
     },
     reviews: [],
   },  {
     id: 10,
     name: "Espatula y Batidor Aqua",
     stock: 100,
-    cost: 140,
+    cost: 3000,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
     image: [
@@ -157,7 +157,7 @@ const products = [
     sales: 0,
     category: {
       name: "Accesorios",
-      id: 2,
+      id: 3,
     },
     reviews: [],
   },
