@@ -5,9 +5,11 @@ import "./App.css";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Cart from "./components/Cart";
+import CartContextProvider from "./components/CartContext";
 
 function App() {
   return (
+    <CartContextProvider>
     <BrowserRouter>
       <div className="App">
         <NavBar />
@@ -19,6 +21,7 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
+    </CartContextProvider>
   );
 }
 

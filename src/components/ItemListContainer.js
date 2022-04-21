@@ -1,4 +1,3 @@
-import ItemCount from './ItemCount';
 import ItemList from './ItemList';
 import './styles/ItemListContainer.css'
 import customFetch from "../utils/customFetch";
@@ -21,15 +20,20 @@ const ItemListContainer = () => {
         }))
             .then(result => setDatos(result))
             .catch(err => console.log(err))
+            //eslint-disable-next-line react-hooks/exhaustive-deps
         }, [datos]);
 
-    const onAdd = (qty) => {
-        alert("You have selected " + qty + " items.");
-    }
+
+        useEffect(() => {
+            return (() => {
+                setDatos([]);
+            })
+        }, []);
+
+
     return (
         <>
             <ItemList items={datos} />
-            <ItemCount stock={4} initial={1} onAdd={onAdd} />
         </>
     );
 }

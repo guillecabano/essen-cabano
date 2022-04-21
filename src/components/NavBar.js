@@ -1,10 +1,10 @@
 //Componente que crea un navbar
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import logo from "../assets/logo.png";
 import "./styles/NavBar.css";
-import CartWidget from "./CartWidget/CartWidget";
+import CartWidget from "./CartWidget";
 
 class NavBar extends React.Component {
     render() {
@@ -13,7 +13,7 @@ class NavBar extends React.Component {
                 <Link to="/">
                     <img src={logo} alt="logo" className="logo" />
                 </Link>
-                <a>
+                <a href={() => false}>
                 <Link to="/" style={{textDecoration: "none"}}><span class="fw-bold h1 text-white mx-3">Essen</span></Link>
                 </a>
                 
@@ -25,21 +25,21 @@ class NavBar extends React.Component {
                         <ul className="navbar-nav menu">
                             <Link to='/category/1'>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">
+                                    <a className="nav-link" href={() => false}>
                                         Cacerolas
                                     </a>
                                 </li>
                             </Link>
                             <Link to='/category/2'>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">
+                                    <a className="nav-link" href={() => false}>
                                         Sartenes
                                     </a>
                                 </li>
                             </Link>
                             <Link to='/category/3'>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">
+                                    <a className="nav-link" href={() => false}>
                                         Accesorios
                                     </a>
                                 </li>
@@ -48,7 +48,9 @@ class NavBar extends React.Component {
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item AddToCart">
                                 <div className="nav-link">
+                                <Link to='/cart' style={{textDecoration: "none", color: "white"}}>  
                                     <CartWidget />
+                                    </Link>
                                 </div>
                             </li>
                         </ul>

@@ -1,15 +1,18 @@
 import ItemCount from './ItemCount';
-import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { CartContext } from './CartContext';
 import './styles/ItemDetail.css'
+
 
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0);
+    const test = useContext(CartContext);
 
     const onAdd = (qty) => {
         alert("You have selected " + qty + " items.");
         setItemCount(qty);
+        test.addToCart(item, qty)
     }
 
     return (
@@ -31,7 +34,7 @@ const ItemDetail = ({ item }) => {
                     {
                         itemCount === 0
                         ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
-                        : <Link to='/cart' style={{textDecoration: "none"}}><Button variant="contained" color="primary">Ir al Carro</Button></Link>
+                        : <Link to='/cart' style={{textDecoration: "none"}}><a href="/#" class="btn btn-warning">Ir al Carro</a></Link>
                     }
                     </div>
                 </div>
