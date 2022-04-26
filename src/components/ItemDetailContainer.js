@@ -9,9 +9,10 @@ const ItemDetailContainer = () => {
     const { idItem } = useParams();
 
     useEffect(() => {
-        customFetch(2000, products.find(item => item.id === parseInt(idItem)))
+        customFetch(300, products.find(item => item.id === parseInt(idItem)))
             .then(result => setDato(result))
             .catch(err => console.log(err))
+            // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     
     return (

@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
-
-
 const WrapperCart = styled.div`
-    padding: 20px;
+  padding: 20px;
 `;
 
 const TitleCart = styled.h1`
-    font-weight: 300;
-    text-align: center;
+  font-weight: 300;
+  text-align: center;
 `;
 
 const ContentCart = styled.div`
@@ -70,19 +68,83 @@ const TopButton = styled.button`
 `;
 
 const TopText = styled.span`
-  margin: 0px 10px;
+  margin: 20px;
+  font-weight: bold;
 `;
 
 const ProductAmountContainer = styled.div`
-    display: flex;
-    align-items: center;
-    margin: 20px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
 `;
 
 const ProductAmount = styled.div`
-    font-size: 24px;
-    margin: 5px;
+  font-size: 24px;
+  margin: 5px;
 `;
 
-export { WrapperCart, TitleCart, ContentCart, Product, ProductDetail, ImageCart, Details, PriceDetail, ProductPrice, Top, TopButton, TopText, ProductAmount, ProductAmountContainer
-}
+const Bottom = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Info = styled.div`
+  flex: 3;
+`;
+
+const Summary = styled.div`
+  flex: 1;
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  height: 50vh;
+`;
+
+const SummaryTitle = styled.h1`
+  font-weight: 200;
+`;
+
+const SummaryItem = styled.div`
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: ${(props) => props.type === "total" && "500"};
+  font-size: ${(props) => props.type === "total" && "24px"};
+`;
+
+const SummaryItemText = styled.span``;
+
+const SummaryItemPrice = styled.span``;
+
+const Button = styled.button`
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+`;
+
+export {
+  WrapperCart,
+  TitleCart,
+  ContentCart,
+  Product,
+  ProductDetail,
+  ImageCart,
+  Details,
+  PriceDetail,
+  ProductPrice,
+  Top,
+  TopButton,
+  TopText,
+  ProductAmount,
+  ProductAmountContainer,
+  Bottom,
+  Info,
+  Summary,
+  SummaryTitle,
+  SummaryItem,
+  SummaryItemText,
+  SummaryItemPrice,
+  Button,
+};
