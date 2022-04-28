@@ -23,21 +23,21 @@ class NavBar extends React.Component {
                         id="navbarNavDropdown"
                     >
                         <ul className="navbar-nav menu">
-                            <Link to='/category/1'>
+                            <Link to='/category/Cacerolas'>
                                 <li className="nav-item">
                                     <a className="nav-link" href={() => false}>
                                         Cacerolas
                                     </a>
                                 </li>
                             </Link>
-                            <Link to='/category/2'>
+                            <Link to='/category/Sartenes'>
                                 <li className="nav-item">
                                     <a className="nav-link" href={() => false}>
                                         Sartenes
                                     </a>
                                 </li>
                             </Link>
-                            <Link to='/category/3'>
+                            <Link to='/category/Accesorios'>
                                 <li className="nav-item">
                                     <a className="nav-link" href={() => false}>
                                         Accesorios

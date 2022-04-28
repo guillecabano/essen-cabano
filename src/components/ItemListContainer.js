@@ -1,9 +1,9 @@
 import ItemList from './ItemList';
 import './styles/ItemListContainer.css'
-import customFetch from "../utils/customFetch";
+import { firestoreFetch } from '../utils/firestoreFetch';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-const { products } = require('../utils/products');
+
 
 
 
@@ -11,29 +11,23 @@ const ItemListContainer = () => {
     const [datos, setDatos] = useState([]);
     const { idCategory } = useParams();
 
-    console.log(idCategory);
-
+    //componentDidUpdate
     useEffect(() => {
-        customFetch(400, products.filter(item => {
-            if (idCategory === undefined) return item;
-            return item.category.id === parseInt(idCategory)
-        }))
+        firestoreFetch(idCategory)
             .then(result => setDatos(result))
-            .catch(err => console.log(err))
-            // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [datos]);
+            .catch(err => console.log(err));
+    }, [idCategory]);
 
-
+    //componentWillUnmount
     useEffect(() => {
         return (() => {
             setDatos([]);
         })
     }, []);
 
-
     return (
-        <ItemList items={datos} />
-);
+            <ItemList items={datos} />
+    );
 }
 
 export default ItemListContainer;

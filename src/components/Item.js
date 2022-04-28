@@ -11,7 +11,7 @@ const Item = ({ title, stock, price, pictureUrl, id, }) => {
                     <h5 class="card-title">{title}</h5>
                     <p class="card-text">Stock: {stock}</p>
                     <Link to={`/item/${id}`}>
-                    <div class="text-center my-4"> <a href="#" class="btn btn-warning">Ver detalles</a> </div>
+                    <div class="text-center my-4"> <a href="/#" class="btn btn-warning">Ver detalles</a> </div>
                     </Link>
                 </div>
             </div>
