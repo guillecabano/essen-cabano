@@ -10,8 +10,9 @@ const ItemDetail = ({ item }) => {
     const test = useContext(CartContext);
 
     const onAdd = (qty) => {
-        alert("You have selected " + qty + " items.");
+        alert("Has seleccionado " + qty + " Productos.");
         setItemCount(qty);
+        console.log(item)
         test.addToCart(item, qty)
     }
 
@@ -20,21 +21,21 @@ const ItemDetail = ({ item }) => {
         {
             item && item.image
             ? 
-            <div class="detailContainer">
-                <div class="wrapperDetail">
-                    <div class="imgContainer">
-                        <img class="imageDetail" src={item.image} alt="Imagen del producto" />
+            <div className="detailContainer">
+                <div className="wrapperDetail">
+                    <div className="imgContainer">
+                        <img className="imageDetail" src={item.image} alt="Imagen del producto" />
                     </div>
-                    <div class="infoContainer">
-                        <div class="title">{item.name}</div>
-                        <div class="desc">{item.description}</div>
-                        <div class="price">$ {item.cost}</div>
-                        <div class="desc">{item.stock} unidades en stock</div>
+                    <div className="infoContainer">
+                        <div className="title">{item.name}</div>
+                        <div className="desc">{item.description}</div>
+                        <div className="price">$ {item.cost}</div>
+                        <div className="desc">{item.stock} unidades en stock</div>
                     
                     {
                         itemCount === 0
                         ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
-                        : <Link to='/cart' style={{textDecoration: "none"}}><a href="/#" class="btn btn-warning">Ir al Carro</a></Link>
+                        : <Link to='/cart' style={{textDecoration: "none"}}><a href="/#" className="btn btn-warning">Ir al Carro</a></Link>
                     }
                     </div>
                 </div>

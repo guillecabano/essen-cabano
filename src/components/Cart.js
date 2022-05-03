@@ -43,7 +43,7 @@ const Cart = () => {
           }
 
           createOrderInFirestore()
-          .then(result => alert('Your order has been created. Please take note of the ID of your order.\n\n\nOrder ID: ' + result.id + '\n\n'))
+          .then(result => alert('Tu orden ha sido creada. Por favor, anota tu numero de orden!.\n\n\nOrden ID: ' + result.id + '\n\n'))
           .catch(err => console.log(err));
       
         test.removeList();
@@ -68,13 +68,14 @@ const Cart = () => {
                     test.cartList.length > 0 &&
                         test.cartList.map(item =>
                             <Product key={item.idItem}>
-                                <ProductDetail>
+                                <ProductDetail>`
+                                    {console.log(item)}
                                     <ImageCart src={item.imgItem} />
                                     <Details>
                                         <span>
                                             <b>Producto:</b> {item.nameItem}
                                         </span>
-                                        <a class="btn btn-warning" href='/#' type="filled" onClick={() => test.deleteItem(item.idItem)}>Borrar</a>
+                                        <a className="btn btn-warning" href='/#' type="filled" onClick={() => test.deleteItem(item.idItem)}>Borrar</a>
                                     </Details>
                                 </ProductDetail>
                                 <PriceDetail>

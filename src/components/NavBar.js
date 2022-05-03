@@ -14,7 +14,7 @@ class NavBar extends React.Component {
                     <img src={logo} alt="logo" className="logo" />
                 </Link>
                 <a href={() => false}>
-                <Link to="/" style={{textDecoration: "none"}}><span class="fw-bold h1 text-white mx-3">Essen</span></Link>
+                <Link to="/" style={{textDecoration: "none"}}><span className="fw-bold h1 text-white mx-3">Essen</span></Link>
                 </a>
                 
                 <div className="container-fluid">
