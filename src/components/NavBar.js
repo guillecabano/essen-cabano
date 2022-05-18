@@ -10,12 +10,12 @@ class NavBar extends React.Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark">
-                <Link to="/">
+                <Link id="RouterNavLink" to="/">
                     <img src={logo} alt="logo" className="logo" />
                 </Link>
-                <a href={() => false}>
-                <Link to="/" style={{textDecoration: "none"}}><span className="fw-bold h1 text-white mx-3">Essen</span></Link>
-                </a>
+                
+                <Link id="RouterNavLink" to="/" style={{textDecoration: "none"}}><span className="fw-bold h1 text-white mx-3">Essen</span></Link>
+                
                 
                 <div className="container-fluid">
                     <div
@@ -25,23 +25,23 @@ class NavBar extends React.Component {
                         <ul className="navbar-nav menu">
                             <Link to='/category/Cacerolas'>
                                 <li className="nav-item">
-                                    <a className="nav-link" href={() => false}>
+                                    <div className="nav-link">
                                         Cacerolas
-                                    </a>
+                                    </div>
                                 </li>
                             </Link>
                             <Link to='/category/Sartenes'>
                                 <li className="nav-item">
-                                    <a className="nav-link" href={() => false}>
+                                    <div className="nav-link">
                                         Sartenes
-                                    </a>
+                                    </div>
                                 </li>
                             </Link>
                             <Link to='/category/Accesorios'>
                                 <li className="nav-item">
-                                    <a className="nav-link" href={() => false}>
+                                    <div className="nav-link">
                                         Accesorios
-                                    </a>
+                                    </div>
                                 </li>
                             </Link>
                         </ul>
