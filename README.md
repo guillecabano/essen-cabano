@@ -9,6 +9,7 @@ This is my final project for the final course of ReactJS in CoderHouse, the webs
 * Material Design
 * Bootstrap
 * Styled Components
+* Firebase
 
 ###Gif of website functioning
 ![](https://github.com/guillecabano/essen-cabano/blob/main/public/GIF%20Essen.gif?raw=true)
@@ -24,6 +25,7 @@ Este es mi proyecto de fin de curso de ReactJS en Coderhouse, la web es un ecomm
 * Material Design
 * Bootstrap
 * Styled Components
+* Firebase
 
 ###Gif del sitio web en funcionamiento
 ![](https://github.com/guillecabano/essen-cabano/blob/main/public/GIF%20Essen.gif?raw=true)
