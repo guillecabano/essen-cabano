@@ -75,7 +75,7 @@ const Cart = () => {
                                         <span>
                                             <b>Producto:</b> {item.nameItem}
                                         </span>
-                                        <a className="btn btn-warning" href='/#' type="filled" onClick={() => test.deleteItem(item.idItem)}>Borrar</a>
+                                        <button className="btn btn-warning" href='/#' type="filled" onClick={() => test.deleteItem(item.idItem)}>Borrar</button>
                                     </Details>
                                 </ProductDetail>
                                 <PriceDetail>
